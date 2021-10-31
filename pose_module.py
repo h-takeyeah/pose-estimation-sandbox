@@ -50,7 +50,13 @@ class PoseDetector():
 def main():
     # VideoCapture()に映像ストリームを渡す．
     # https://docs.opencv.org/master/d8/dfe/classcv_1_1VideoCapture.html
-    cap = cv2.VideoCapture(2) # /dev/video2 環境によりけり
+    device_id = 0
+    # 有効なカメラが見つかるまで回す(最大4回)
+    while device_id < 4:
+        cap = cv2.VideoCapture(device_id) # /dev/video{device_id}
+        if cap.isOpened():
+            break
+        device_id = device_id + 1
 
     if not cap.isOpened():
         print('Can\'t open a camera')
