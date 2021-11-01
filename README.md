@@ -22,6 +22,15 @@ pipenv run python pose_module.py
 
 2021-11-01現在， opencv-python の issue [#572](https://github.com/opencv/opencv-python/issues/572) として報告されている症状が手元でも出たため少し古いバージョンを指定して使っている．治ったら最新版を使いたい．
 
+## Sample
+
+|||
+---|:---:
+sample1|<img src="./assets/pose_estimation_sample1x.jpg" height="250" />
+sample2|<img src="./assets/pose_estimation_sample2x.jpg" height="250" />
+
+左上の数字はフレームレート．
+
 ## References
 
 - [MediaPipe](https://google.github.io/mediapipe/)
