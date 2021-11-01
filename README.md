@@ -26,8 +26,8 @@ pipenv run python pose_module.py
 
 |||
 ---|:---:
-sample1|<img src="./assets/pose_estimation_sample1x.jpg" height="250" />
-sample2|<img src="./assets/pose_estimation_sample2x.jpg" height="250" />
+sample1|<img src="./assets/pose_estimation_sample1.jpg" height="250" />
+sample2|<img src="./assets/pose_estimation_sample2.jpg" height="250" />
 
 左上の数字はフレームレート．
 
