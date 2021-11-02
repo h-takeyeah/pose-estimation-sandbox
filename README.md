@@ -6,16 +6,17 @@
 
 動作確認は
 
-- Linux
+- zsh 5.8
 - Python 3.9.7
 - pip 21.2.3
-- pipenv 2021.5.29
 
-で行った．
+で行った．Arch Linuxを使用した．
 
 ```bash
-pipenv install
-pipenv run python pose_module.py
+python -m venv .venv # python -> python3である前提
+source .venv/bin/activate # Windowsの場合はScripts以下の.batや.ps1などを指定
+pip install -r requirements.txt
+python pose_module.py
 ```
 
 ## Note
@@ -35,4 +36,3 @@ sample2|<img src="./assets/pose_estimation_sample2.jpg" height="250" />
 
 - [MediaPipe](https://google.github.io/mediapipe/)
 - [Latest Pose Estimation Realtime (24 FPS) using CPU | Computer Vision | OpenCV Python 2021](https://youtu.be/brwgBf6VB0I) (参考にした動画)
-- [pypa/pipenv](https://github.com/pypa/pipenv)
